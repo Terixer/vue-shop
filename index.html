@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div id="app">
-      <div id="product">
-        <div class="product-image"></div>
-        <h1>{{ product }}</h1>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="nav-bar"></div>
+  <div id="app">
+    <div class="cart">
+      Cart ({{cartLength}})
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
-    <script src="script.js"></script>
-  </body>
+    <product :premium="true" @add-to-card="updateCart"></product>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

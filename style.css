@@ -1,0 +1,33 @@
+.product-info,
+.product-image {
+    width: 49%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+body {
+    margin: 0px;
+}
+
+.cart{
+    margin-top: 20px;
+    width:50%;
+    margin-left: 49%;
+}
+
+.btn {
+    text-align: center;
+    background: #aa53aa;
+    color: white;
+    padding: 20px 0px;
+    cursor: pointer;
+    width:150px;
+}
+.disabledButton {
+    background: #aaa;
+}
+.color-box{
+    width:40px;
+    height:40px;
+    margin:5px;
+}
